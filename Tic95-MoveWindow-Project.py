@@ -28,9 +28,9 @@ if is_admin():
         win32gui.MoveWindow(keylist[index], CoordX,CoordY,SizeX,SizeY,True)
         win32gui.MoveWindow(keylist[index], CoordX,CoordY,SizeX,SizeY,True)
 
-    #(nameOfTheWindow,CoordX,CoordY,SizeX,SizeY)     #PUT THE WINDOW TO MOVE IN THIS FUNCTION 
-    moveWindow("Discord",-1920,0,1290,825)           #PUT THE WINDOW TO MOVE IN THIS FUNCTION 
-    moveWindow("Task Manager",-630,330,130,350)      #PUT THE WINDOW TO MOVE IN THIS FUNCTION 
+    #(nameOfTheWindow,CoordX,CoordY,SizeX,SizeY)     #PUT THE WINDOW YOU WANNA MOVE IN THIS FUNCTION 
+    moveWindow("Discord",-1920,0,1290,825)           #PUT THE WINDOW YOU WANNA MOVE IN THIS FUNCTION 
+    moveWindow("Task Manager",-630,330,130,350)      #PUT THE WINDOW YOU WANNA MOVE IN THIS FUNCTION 
 else:
     # Re-run the program with admin rights
     ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
